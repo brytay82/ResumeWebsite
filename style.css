@@ -86,16 +86,15 @@ height: 3400px;
 }
 
 
-.hello a {
+.hello h1 {
     font-weight: 900;
     font-family: 'Georgia', serif, sans-serif;
-    font-size: 40px;
     color: black;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.hello a:hover {
+.hello h1:hover {
     color: rgb(13, 77, 45);
     letter-spacing: 8px;
 }
