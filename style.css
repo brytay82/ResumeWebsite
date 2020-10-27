@@ -17,6 +17,7 @@ h2 {
     font-family: 'Georgia', serif, sans-serif;
     color: black;
     text-decoration: none;
+    font-size: 46px;
 }
 
 p {
@@ -26,52 +27,53 @@ p {
 }
 
 .contact-wrapper {
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
    background-color: rgb(243, 242, 242);
-
 }
 
 .link-wrapper {
     display: flex;
     text-align: center;
+    z-index: 2; 
 }
 
 
 
 .contact-link {
-    padding: 30px 90px 30px 90px;
+    padding: 30px 400px 30px 400px;
     text-align: center;
-    font-size: 32px; 
     text-decoration: none;
+    z-index: 1;
 }
 
-.contact-link a {
+.contact-link h2 {
     font-weight: 900;
     font-family: 'Georgia', serif, sans-serif;
-    font-size: 18px;
+    font-size: 46px;
     color: black;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.contact-link a:hover {
-    color: rgb(13, 77, 45);
-    letter-spacing: 2px;
+.contact-link h2:hover {
+    color: rgb(167, 30, 105);
+    letter-spacing: 6px;
+    text-decoration: none;
 }
 
 
 .content {
 width: 100%;
-height: 3400px;
+height: 4200px;
 }
 
 .background {
     background-image: url(assets/BloodsLake.JPG);
     width: 100%;
-    height: 1300px; 
+    height: 1500px; 
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 2000px;
@@ -79,9 +81,9 @@ height: 3400px;
 }
 
 .hello {
-    padding-right:200px;
+    padding-right:1100px;
     float: right;
-    width: 500px;
+    width: 700px;
     padding-top: 80px;   
 }
 
@@ -100,7 +102,7 @@ height: 3400px;
 }
 
 .intro {
-    padding: 30px 0 30px 0;
+    padding: 60px 0 60px 0;
     width: 100%;
     display: flex;
     justify-content: center; 
@@ -119,16 +121,53 @@ height: 3400px;
 }
 
 .background-skills {
-    justify-content: center;
-    height: 300px;
-    padding-bottom: 150px;
+    display: flex; 
+    /* justify-content: center; */
+    align-content: left; 
+    height: 600px;
+    padding-bottom: 100px;
+    padding-top: 100px; 
 }
 
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 900px;  
+height: 600px;
+width: 100%;
+display: flex; 
+justify-content: center;
+align-content: center;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: left;
+    align-content: left;
+
+}
+
+.grid-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  
+}
+
+.grid-item3 {
+    grid-column-start: 3;
+    grid-column-end: 4; 
+    
+}
+
+
+
 .image-block {
-    float: left;
-    margin-left: 50px; 
-    justify-content: center;
-    align-content: center;
+    /* float: left;  */
+    /* margin-left: 100px;  */
+    /* justify-content: center; */
+    /* align-content: center; */
+
 }
 
 .image {
@@ -143,7 +182,8 @@ height: 3400px;
 
 .resume {
     margin-right: 300px;
-    margin-left: 300px;
+    margin-left: 1900px;
+    width: 2200px; 
     height: auto;
     justify-content: center; 
     align-content: center;
@@ -156,7 +196,7 @@ height: 3400px;
 
 .res-headers {
     font-family: 'Georgia', serif, sans-serif;
-    font-size: 46px;
+    font-size: 50px;
     font-weight: 900;
     color: purple;
 }
@@ -182,8 +222,8 @@ height: 3400px;
 .footer {
     align-self: flex-end;
     margin-left: 10px;
-    height: 40px;
-    font-size: 32px;
+    height: 80px;
+    font-size: 40px;
     background-color: rgb(243, 242, 242)
 }
 
