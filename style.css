@@ -4,13 +4,11 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 80px; 
-    letter-spacing: 3px;
-    font-family: 'Georgia', serif, sans-serif;
-    color: black; 
-    text-decoration: none; 
-}
+.content {
+    width: 100%;
+    height: 4650px;
+    }
+
 
 h2 {
     font-weight: 900;
@@ -26,27 +24,24 @@ p {
     font-size: 36px;
 }
 
-.contact-wrapper {
+.contact-container {
     height: 150px;
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
    background-color: rgb(243, 242, 242);
+   background-image: linear-gradient(rgb(173, 173, 173), rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
 }
 
 .link-wrapper {
     display: flex;
     text-align: center;
-    z-index: 2; 
 }
-
-
 
 .contact-link a {
     padding: 30px 400px 30px 400px;
     text-align: center;
     text-decoration: none;
-    z-index: 1;
 }
 
 .contact-link h2 {
@@ -59,21 +54,22 @@ p {
 }
 
 .contact-link h2:hover {
-    color: rgb(167, 30, 105);
+    color: rgb(248, 6, 228);
     letter-spacing: 6px;
     text-decoration: none;
 }
 
-
-.content {
-width: 100%;
-height: 4550px;
+.icon {
+    
+    width: 150px;
+    height: 150px; 
+    display: block;
 }
 
 .background {
     background-image: url(assets/BloodsLake.JPG);
     width: 100%;
-    height: 1500px; 
+    height: 1600px; 
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 2000px;
@@ -89,19 +85,29 @@ height: 4550px;
 
 
 .hello h1 {
+    font-size: 80px; 
     font-weight: 900;
-    font-family: 'Georgia', serif, sans-serif;
-    color: black;
-    text-decoration: none;
-    transition: 0.5s;
+    font-family:  'Georgia', serif, sans-serif; 
+    color: rgb(128, 32, 167);
+    animation-name: hello;
+    animation-duration: 3s;
+    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+    text-decoration: none; 
+    text-shadow: 2px 2px 5px black;
+}   
+
+@keyframes hello {
+ 0% {color: rgb(210, 188, 219)}
+ 10% {color: rgb(176, 146, 192)}
+ 25% {color: rgb(169, 116, 190)}
+ 50% {color: rgb(154, 91, 184)}
+ 75% {color: rgb(129, 56, 163)}
+ 100% {color: rgb(128, 32, 167)}
 }
 
-.hello h1:hover {
-    color: rgb(167, 30, 105);
-    letter-spacing: 8px;
-}
 
-.intro {
+.name-container {
     padding: 60px 0 60px 0;
     width: 100%;
     display: flex;
@@ -111,34 +117,42 @@ height: 4550px;
     margin-right: 10px;
     margin-left: 10px;
     background-color: rgb(243, 242, 242);
+    background-image: linear-gradient(rgb(173, 173, 173), rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
 }
 
 .name {
     display: flex; 
-    font-family: 'Georgia', serif, sans-serif;
+    font-family: 'Architects_Daughter', serif, sans-serif;
     font-weight: 900;
     font-size: 78px; 
 }
 
-.background-skills {
+.about-me-container {
     display: flex; 
     justify-content: center;
     height: 900px;
     padding-bottom: 50px;
+    border-style: outset;
 }
 
-.background-headings {
-    font-family: 'Gabriola', serif, sans-serif; 
-    font-size: 78px;
-    font-weight: 900;
+.image-block {
+    float: left; 
+    margin-left: 300px; 
+    justify-content: center;
+    align-content: center;
+    padding-top: 25px; 
     
 }
 
-.description {
-    padding-left: 100px; 
-    font-family: 'Georgia', serif, sans-serif;
-    font-size: 40px;
-    font-weight: 900;
+.image {
+    height: 900px; 
+    border-radius: 20%;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.about-me-block {
+    float: right;
+    width: 1325px; 
 }
 
 .grid-container {
@@ -156,7 +170,6 @@ justify-content: center;
     grid-column-start: 1;
     grid-column-end: 2;
     margin-left: 800px; 
-   
 }
 
 .grid-item2 {
@@ -168,52 +181,38 @@ justify-content: center;
     margin-left: 400px;  
 }
 
-.background-box {
+.background-headings {
+    font-family: 'Gabriola', serif, sans-serif; 
+    font-size: 78px;
+    font-weight: 900;   
+}
+
+.description {
+    padding-left: 100px; 
+    font-family: 'Georgia', serif, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.skills-box {
     background-color:  rgb(243, 242, 242);
     margin-right: 650px; 
     padding: 0 30px 5px 40px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
-
-/* .grid-item3 {
-    grid-column-start: 3;
-    grid-column-end: 4; 
-} */
-
-
-
-.image-block {
-    float: left; 
-    margin-left: 300px; 
-    justify-content: center;
-    align-content: center;
-    padding-top: 25px; 
-
-}
-
-.image {
-    height: 900px; 
-    border-radius: 20%;   
-}
-
-.skills-block {
-    float: right;
-    width: 1325px; 
-}
 
 .flex-container {
 display: flex;
 align-content: center;
 justify-content: center;
+border-style: outset;
+    border-width: 5px;
 }
 
 .resume {
-    /* margin-right: 300px; */
-    /* margin-left: 1900px; */
     width: 2200px; 
     height: auto;
-    /* justify-content: center;  */
-    /* align-content: center; */
    padding: 10px 0 0 0;
     object-fit: fill;
     font-size: 38px;
@@ -225,8 +224,14 @@ justify-content: center;
     font-family: 'Georgia', serif, sans-serif;
     font-size: 54px;
     font-weight: 900;
+    text-shadow: 2px 2px; 
     color: purple;
 }
+
+.res-headers-box {
+    background-color: rgb(233, 212, 245);
+    height: 100px; 
+   }
 
 .res-style1 {
     font-family: 'Georgia', serif, sans-serif;
@@ -251,6 +256,9 @@ justify-content: center;
     margin-left: 10px;
     height: 80px;
     font-size: 40px;
-    background-color: rgb(243, 242, 242)
+    font-weight: 500;
+    padding-top: 10px; 
+    color: black; 
+    background-image: linear-gradient( rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
 }
 
