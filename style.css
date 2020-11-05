@@ -6,7 +6,8 @@ body {
 
 .content {
     width: 100vw;
-    height: 1250px;
+    height: 1220px;
+    margin: 0;
     }
 
 
@@ -19,13 +20,15 @@ h2 {
 }
 
 p {
-    color: black; 
-    font-family: 'Georgia', serif, sans-serif;
-    font-size: 9px;
+    font-weight: 900;
+    color:  rgb(94, 6, 94); 
+    font-family:'Merienda', italic, serif;
+    font-size: 12px;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 .contact-container {
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
@@ -38,10 +41,11 @@ p {
     text-align: center;
 }
 
-.contact-link a {
-    padding: 8px 100px 8px 100px;
+.contact-link a i {
+    padding: 6px 100px 1px 100px;
     text-align: center;
     text-decoration: none;
+    color:  rgb(97, 3, 97);
 }
 
 /* .contact-link h2 {
@@ -51,13 +55,12 @@ p {
     color: black;
     text-decoration: none;
     transition: 0.5s;
-}
-
-.contact-link h2:hover {
-    color: rgb(248, 6, 228);
-    letter-spacing: 2px;
-    text-decoration: none;
 } */
+
+.contact-link a i:hover {
+    color: rgb(248, 6, 228);
+    text-decoration: none;
+}
 
 
 
@@ -72,64 +75,59 @@ p {
 }
 
 .hello {
-    padding-right:275px;
+    padding-right:225px;
     float: right;
     width: 175px;
-    padding-top: 20px;   
+    padding-top: 6px;   
 }
 
 
 .hello h1{
-    font-size: 24px; 
-    font-weight: 500;
-    font-family: 'Josefin Sans', sans-serif; 
-    color: rgb(128, 32, 167);
+    font-size: 36px; 
+    font-weight: 900;
+    font-family: 'Merienda', italic, serif;
+    color: rgb(97, 3, 97);
     animation-name: hello;
-    animation-duration: 6s;
+    animation-duration: 7s;
     animation-direction: alternate; 
-    animation-iteration-count: infinite;
-    text-decoration: italic !important; 
+    animation-iteration-count: 3;
+    letter-spacing: 2px; 
     text-shadow: 1px 1px 1px black;
     
 }   
 
 @keyframes hello {
- 0% {color: rgb(210, 188, 219)}
- 10% {color: rgb(176, 146, 192); letter-spacing: 3px}
- 25% {color: rgb(169, 116, 190); letter-spacing: 5px; }
- 50% {color: rgb(154, 91, 184)}
- 75% {color: rgb(129, 56, 163)}
- 100% {color: rgb(128, 32, 167)}
+ 0% {color: rgb(97, 3, 97); letter-spacing: 2px}
+ 10% {color: rgb(109, 38, 138)};
+ 20% {color: rgb(158, 97, 182); letter-spacing: 4px}
+ 30% {color: rgb(178, 132, 196)};
+ 40% {color: rgb(178, 158, 185); letter-spacing:6px}
+ 50% {color: rgb(196, 183, 202); letter-spacing: 6px}
+ 60% {color: rgb(178, 158, 185); letter-spacing:6px}
+ 70% {color: rgb(178, 132, 196)};
+ 80% {color: rgb(158, 97, 182); letter-spacing: 4px}
+ 90% {color: rgb(109, 38, 138)};
+ 100% {color: rgb(97, 3, 97); letter-spacing: 2px}
 }
 
 
 .name-container {
-    padding: 15px 0 15px 0;
+    padding: 12px 0 12px 0;
     width: 100vw;
     display: flex;
     justify-content: center; 
     text-align: center;
-    height: auto;
-    margin-right: 3px;
-    margin-left: 3px;
     background-color: rgb(243, 242, 242);
     background-image: linear-gradient(rgb(173, 173, 173), rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
 }
 
 .name {
     display: flex; 
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:'Merienda', italic, serif;
     font-weight: 900;
     font-size: 20px;
-    color: rgb(128, 32, 167);
-}
-
-.about-me-container {
-    display: flex; 
-    justify-content: center;
-    height: 225px;
-    padding-bottom: 13px;
-    border-style: outset;
+    color: rgb(97, 3, 97);
+    text-shadow: 1px 1px 1px black;
 }
 
 .image-block {
@@ -145,6 +143,13 @@ p {
     height: 225px; 
     border-radius: 20%;   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.about-me-container {
+    display: flex; 
+    justify-content: center;
+    height: 225px;
+    padding-bottom: 13px;
 }
 
 .about-me-block {
@@ -166,7 +171,7 @@ justify-content: center;
 .grid-item1 {
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 200px; 
+    margin-left: 250px; 
 }
 
 .grid-item2 {
@@ -175,31 +180,42 @@ justify-content: center;
     padding-top: 38px; 
     align-content: right; 
     justify-content: right; 
-    margin-left: 100px;  
+    margin-left: 50px;  
 }
 
 .background-headings {
-    font-family: 'Gabriola', serif, sans-serif; 
+    font-family: 'Merienda', italic, serif;
     font-size: 20px;
-    font-weight: 900;   
+    font-weight: 900;
+    color:  rgb(94, 6, 94); 
+    text-shadow: 1px 1px 1px black;
 }
 
 .description {
-    padding-left: 25px; 
+    padding-left: 28px; 
     font-family: 'Georgia', serif, sans-serif;
     font-size: 10px;
     font-weight: 900;
+    color:  rgb(94, 6, 94);
+    
+}
+
+.indent {
+    text-indent: 2.0em;
 }
 
 .skills-box {
+    align-content: center; 
+    justify-content: center;
     background-color:  rgb(243, 242, 242);
-    margin-right: 163px; 
-    padding: 0 8px 2px 10px;  
+    margin-right: 150px; 
+    padding: 2px 6px 2px 6px;  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
 
 .flex-container {
+width: 100vw;
 display: flex;
 align-content: center;
 justify-content: center;
@@ -215,11 +231,13 @@ justify-content: center;
 }
 
 .res-headers {
-    font-family: 'Georgia', serif, sans-serif;
+    font-family: 'Merienda', italic, serif;
     font-size: 14px;
     font-weight: 900;
-    text-shadow: 1px 1px; 
-    color: purple;
+    text-shadow: 0.5px 0.5px; 
+    color: rgb(82, 2, 82);
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .res-headers-box {
