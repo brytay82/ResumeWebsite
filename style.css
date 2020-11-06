@@ -6,7 +6,7 @@ body {
 
 .content {
     width: 100vw;
-    height: 1300px;
+    height: 1330px;
     margin: 0;
     }
 
@@ -130,7 +130,7 @@ p {
     margin-left: 75px; 
     justify-content: center;
     align-content: center;
-    padding-top: 7px; 
+    padding-top: 10px; 
 }
 
 .image {
@@ -142,23 +142,28 @@ p {
 .about-me-container {
     display: flex; 
     justify-content: center;
-    /* padding-bottom: 10px; */
+}
+
+.paper {
+    background-image: url(assets/tornpaper2.png);
+    background-size: cover;
+    padding: 50px 10px 10px 20px;
+    background-repeat: no-repeat;
 }
 
 .about-me-block {
     float: right;
-    width: 350px; 
+    width: 375px; 
 }
 
-.grid-container {
+.about-me-grid-container {
 display: grid;
-grid-template-columns: 175px 75px;
+grid-template-columns: 180px 70px;
 grid-column-gap: 75px;
-
 width: 100vw;
 display: flex; 
 align-content: center;
-justify-content: center;  
+
 }
 
 .grid-item1 {
@@ -178,27 +183,20 @@ justify-content: center;
 
 .background-headings {
     font-family: 'Merienda', italic, serif;
+    padding-top: 7px;  
     font-size: 20px;
     font-weight: 900;
     color:  rgb(94, 6, 94); 
     text-shadow: 1px 1px 1px black;
 }
 
+
 .description {
-    padding-left: 28px; 
-    font-family: 'Georgia', serif, sans-serif;
+    padding-left: 20px; 
+    font-family: 'Indie Flower', cursive;
     font-size: 11px;
     font-weight: 900;
     color:  rgb(94, 6, 94); 
-}
-
-.paper {
-    background-image: url(assets/tornpaper2.png);
-    background-size: cover;
-    margin-top: 5px; 
-    padding: 10px 10px 10px 20px;
-    margin-bottom: 5px; 
-    background-repeat: no-repeat;
 }
 
 .first-paragraph {
@@ -206,12 +204,12 @@ justify-content: center;
 }
 
 .second-paragraph {
-    padding-left: 20px; 
-    padding-right: 30px;
+    padding-left: 10px; 
+    padding-right: 20px;
 }
 
 .third-paragraph {
-    padding-left: 60px; 
+    padding-left: 20px; 
 }
 
 .skills-box {
@@ -223,6 +221,14 @@ justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
+.bullet-points {
+    padding-left: 28px; 
+    font-family: 'Georgia', serif, sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    color:  rgb(94, 6, 94); 
+}
+
 
 .flex-container {
 width: 100vw;
@@ -230,7 +236,8 @@ display: flex;
 align-content: center;
 justify-content: center;
 height: 490px; 
-padding-bottom: 5px; 
+padding-bottom: 10px; 
+padding-top: 30px; 
 }
 
 .resume {
