@@ -6,7 +6,7 @@ body {
 
 .content {
     width: 100vw;
-    height: 1220px;
+    height: 1300px;
     margin: 0;
     }
 
@@ -28,12 +28,13 @@ p {
 }
 
 .contact-container {
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
    background-color: rgb(243, 242, 242);
    background-image: linear-gradient(rgb(173, 173, 173), rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
+   border: solid rgb(211, 209, 209);
 }
 
 .link-wrapper {
@@ -42,27 +43,18 @@ p {
 }
 
 .contact-link a i {
-    padding: 6px 100px 1px 100px;
+    padding: 1px 100px 1px 100px;
     text-align: center;
     text-decoration: none;
     color:  rgb(97, 3, 97);
 }
 
-/* .contact-link h2 {
-    font-weight: 900;
-    font-family: 'Georgia', serif, sans-serif;
-    font-size: 12px;
-    color: black;
-    text-decoration: none;
-    transition: 0.5s;
-} */
-
 .contact-link a i:hover {
     color: rgb(248, 6, 228);
     text-decoration: none;
+    transform: scaleX(1.25);
+    transition: 1s;   
 }
-
-
 
 .background {
     background-image: url(assets/BloodsLake.JPG);
@@ -81,44 +73,39 @@ p {
     padding-top: 6px;   
 }
 
-
 .hello h1{
     font-size: 36px; 
     font-weight: 900;
     font-family: 'Merienda', italic, serif;
-    color: rgb(97, 3, 97);
+    color: rgb(196, 183, 202);
     animation-name: hello;
-    animation-duration: 7s;
+    animation-duration: 5s;
     animation-direction: alternate; 
-    animation-iteration-count: 3;
-    letter-spacing: 2px; 
+    animation-iteration-count: 1;
+    letter-spacing: 6px;
     text-shadow: 1px 1px 1px black;
     
 }   
 
 @keyframes hello {
  0% {color: rgb(97, 3, 97); letter-spacing: 2px}
- 10% {color: rgb(109, 38, 138)};
- 20% {color: rgb(158, 97, 182); letter-spacing: 4px}
- 30% {color: rgb(178, 132, 196)};
- 40% {color: rgb(178, 158, 185); letter-spacing:6px}
- 50% {color: rgb(196, 183, 202); letter-spacing: 6px}
- 60% {color: rgb(178, 158, 185); letter-spacing:6px}
- 70% {color: rgb(178, 132, 196)};
- 80% {color: rgb(158, 97, 182); letter-spacing: 4px}
- 90% {color: rgb(109, 38, 138)};
- 100% {color: rgb(97, 3, 97); letter-spacing: 2px}
+ 20% {color: rgb(109, 38, 138)};
+ 40% {color: rgb(158, 97, 182); letter-spacing: 4px}
+ 60% {color: rgb(178, 132, 196)};
+ 80% {color: rgb(178, 158, 185); letter-spacing:6px}
+ 90% {color: rgb(196, 183, 202)};
+ 100% {color: rgb(219, 210, 223); letter-spacing: 8px}
 }
 
-
 .name-container {
-    padding: 12px 0 12px 0;
+    padding: 6px 0 6px 0;
     width: 100vw;
     display: flex;
     justify-content: center; 
     text-align: center;
     background-color: rgb(243, 242, 242);
     background-image: linear-gradient(rgb(173, 173, 173), rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
+    border: solid rgb(211, 209, 209);
 }
 
 .name {
@@ -130,13 +117,20 @@ p {
     text-shadow: 1px 1px 1px black;
 }
 
+.background-planks {
+    background: url(assets/woodplanks2.jpg);
+}
+
+.mid-block {
+    height: 315px;
+}
+
 .image-block {
     float: left; 
     margin-left: 75px; 
     justify-content: center;
     align-content: center;
     padding-top: 7px; 
-    
 }
 
 .image {
@@ -148,20 +142,19 @@ p {
 .about-me-container {
     display: flex; 
     justify-content: center;
-    height: 225px;
-    padding-bottom: 13px;
+    /* padding-bottom: 10px; */
 }
 
 .about-me-block {
     float: right;
-    width: 331px; 
+    width: 350px; 
 }
 
 .grid-container {
 display: grid;
-grid-template-columns: 125px 125px;
-grid-column-gap: 175px;
-height: 200px;
+grid-template-columns: 175px 75px;
+grid-column-gap: 75px;
+
 width: 100vw;
 display: flex; 
 align-content: center;
@@ -194,14 +187,31 @@ justify-content: center;
 .description {
     padding-left: 28px; 
     font-family: 'Georgia', serif, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 900;
-    color:  rgb(94, 6, 94);
-    
+    color:  rgb(94, 6, 94); 
 }
 
-.indent {
-    text-indent: 2.0em;
+.paper {
+    background-image: url(assets/tornpaper2.png);
+    background-size: cover;
+    margin-top: 5px; 
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 5px; 
+    background-repeat: no-repeat;
+}
+
+.first-paragraph {
+    padding-right: 40px;
+}
+
+.second-paragraph {
+    padding-left: 20px; 
+    padding-right: 30px;
+}
+
+.third-paragraph {
+    padding-left: 60px; 
 }
 
 .skills-box {
@@ -219,15 +229,19 @@ width: 100vw;
 display: flex;
 align-content: center;
 justify-content: center;
+height: 490px; 
+padding-bottom: 5px; 
 }
 
 .resume {
     width: 550px; 
-    height: 430px;
-   padding: 3px 0 0 0;
+    height: 450px;
+   padding: 0 0 5px 0;
     object-fit: fill;
     font-size: 10px;
     text-decoration: none; 
+    background-color:  rgb(243, 242, 242); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .res-headers {
@@ -238,6 +252,7 @@ justify-content: center;
     color: rgb(82, 2, 82);
     padding-left: 2px;
     padding-top: 2px;
+    text-indent: 5px;
 }
 
 .res-headers-box {
@@ -249,27 +264,29 @@ justify-content: center;
     font-family: 'Georgia', serif, sans-serif;
     font-size: 12px;
     font-weight: 900;
+    padding-left: 20px; 
 }
 
 .res-style2 {
     font-family: 'Georgia', serif, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
+    padding-left: 20px; 
 }
 
 .res-style3 {
-      font-family: 'Georgia', serif, sans-serif;
+    font-family: 'Georgia', serif, sans-serif;
     font-size: 10px;
     font-weight: 900;
+    padding-left: 10px; 
 }
  
 
 .footer {
     align-self: flex-end;
-    margin-left: 12px;
     height: 20px;
     font-size: 12px;
     font-weight: 500;
-    padding-top: 2px; 
+    padding-top: 2px;
     color: black; 
     background-image: linear-gradient( rgb(211, 209, 209), rgb(228, 227, 227),  rgb(243, 242, 242));
 }
