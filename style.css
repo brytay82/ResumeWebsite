@@ -1,0 +1,308 @@
+body {
+    width:100vw;
+    height:100vh;
+    margin: 0;
+}
+
+.content {
+    min-height: 1490px;
+    margin: 0;
+    }
+
+
+h2 {
+    font-weight: 900;
+    font-family: 'Georgia', serif, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-weight: 900;
+    color:  rgb(94, 6, 94); 
+    font-family:'Merienda', italic, serif;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.contact-container {
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+   background-color: rgb(243, 242, 242);
+   background-image: linear-gradient(rgb(250, 212, 239), rgb(253, 235, 247), rgb(248, 236, 244),  rgb(253, 249, 252));
+   border: solid rgb(211, 209, 209);
+}
+
+.link-wrapper {
+    display: flex;
+    text-align: center;
+}
+
+.contact-link a i {
+    padding: 1px 100px 1px 100px;
+    text-align: center;
+    text-decoration: none;
+    color:  rgb(97, 3, 97);
+}
+
+.contact-link a i:hover {
+    color: rgb(248, 6, 228);
+    text-decoration: none;
+    transform: scaleX(1.25);
+    transition: 1s;   
+}
+
+.background {
+    background-image: url(assets/BloodsLake.JPG);
+    height: 400px; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    padding: 0 0 15px 0;
+}
+
+.hello {
+    padding-right:225px;
+    float: right;
+}
+
+.hello h1{
+    font-size: 56px; 
+    font-weight: 900;
+    font-family: 'Merienda', italic, serif;
+    color: rgb(158, 97, 182);
+    animation-name: hello;
+    animation-duration: 5s;
+    animation-direction: alternate; 
+    animation-iteration-count: 1;
+    letter-spacing: 6px;
+    text-shadow: 1px 1px 1px black;
+    
+}   
+
+@keyframes hello {
+ 0% {color: rgb(97, 3, 97); letter-spacing: 2px}
+ 20% {color: rgb(109, 38, 138)};
+ 20% {color: rgb(158, 97, 182); letter-spacing: 3px}
+ 30% {color: rgb(178, 132, 196)};
+ 30% {color: rgb(178, 158, 185); letter-spacing:4px}
+ 40% {color: rgb(196, 183, 202)};
+ 40% {color: rgb(219, 210, 223); letter-spacing: 5px}
+ 50% {color: rgb(196, 183, 202)};
+ 60% {color: rgb(178, 158, 185); letter-spacing:6px}
+ 70% {color: rgb(178, 132, 196)};
+ 80% {color: rgb(158, 97, 182); letter-spacing: 7px}
+ 90% {color: rgb(109, 38, 138)};
+ 100% {color: rgb(97, 3, 97); letter-spacing: 8px}
+}
+
+.name-container {
+    padding: 6px 0 6px 0;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    background-color: rgb(243, 242, 242);
+    background-image: linear-gradient(rgb(250, 212, 239), rgb(253, 235, 247), rgb(248, 236, 244),  rgb(253, 249, 252));
+    border: solid rgb(211, 209, 209);
+}
+
+.name {
+    display: flex; 
+    font-family:'Merienda', italic, serif;
+    font-weight: 900;
+    color: rgb(97, 3, 97);
+    text-shadow: 1px 1px 1px black;
+}
+
+.background-planks {
+    background: url(assets/woodplanks2.jpg);
+}
+
+.mid-block {
+    height: 400px;
+}
+
+.image-block {
+    float: left; 
+    margin-left: 20%;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2%; 
+}
+
+.image {
+    height: 225px; 
+    border-radius: 20%;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.about-me-container {
+    display: flex;
+}
+
+.paper {
+    background-image: url(assets/tornpaper2.png);
+    background-size: cover;
+    padding: 1% 5% 3% 5%;
+    background-repeat: no-repeat;
+}
+
+.about-me-block {
+    float: center;
+    width: 75%; 
+}
+
+.about-me-grid-container {
+display: grid;
+grid-template-columns: 10% 1%;
+grid-column-gap: 1%;
+display: flex; 
+align-content: center;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 10%; 
+}
+
+.grid-item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 0;
+    align-content: center; 
+    justify-content: center; 
+    margin-top: 2%;
+    width: 70%;
+}
+
+.background-headings {
+    font-family: 'Merienda', italic, serif;
+    padding-top: 1%;  
+    font-weight: 900;
+    color:  rgb(94, 6, 94); 
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.description {
+    padding-left: 1%; 
+    font-family: 'Indie Flower', cursive;
+    
+    font-weight: 900;
+    color:  rgb(94, 6, 94); 
+}
+
+.first-paragraph {
+    padding-right: 2%;
+}
+
+.second-paragraph {
+    padding-left: 4%; 
+    padding-right: 2%;
+}
+
+.third-paragraph {
+    padding-left: 6%; 
+}
+
+.skills-box {
+    height: 250px;
+   
+  
+   
+    background-color:  rgb(243, 242, 242);
+     
+      
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.skills-box p{
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+.bullet-points {
+    padding-top: 10%;
+
+    font-family: 'Georgia', serif, sans-serif;
+    font-weight: 900;
+    font-size: 80%;
+    color:  rgb(94, 6, 94); 
+}
+
+
+.flex-container {
+display: flex;
+align-content: center;
+justify-content: center;
+height: 600px; 
+padding-bottom: 2%; 
+
+}
+
+.resume {
+    height: 590px;
+   padding: 0 0 5px 0;
+    object-fit: fill;
+    text-decoration: none; 
+    background-color:  rgb(243, 242, 242); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.res-headers {
+    font-family: 'Merienda', italic, serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-shadow: 0.5px 0.5px; 
+    color: rgb(82, 2, 82);
+    padding-left: 1%;
+    padding-top: 1%;
+    text-indent: 1%;
+}
+
+.res-headers-box {
+    background-color: rgb(233, 212, 245);
+    height: 25px; 
+   }
+
+.res-style1 {
+    font-family: 'Georgia', serif, sans-serif;
+    
+    font-weight: 900;
+    padding-left: 5%; 
+}
+
+.res-style2 {
+    font-family: 'Georgia', serif, sans-serif;
+    font-size: 12px;
+    padding-left: 5%; 
+}
+
+.res-style3 {
+    font-family: 'Georgia', serif, sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    padding-left: 3%; 
+}
+ 
+
+.footer {
+    align-self: flex-end;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 1%;
+    color: black; 
+    background-image: linear-gradient(rgb(250, 212, 239), rgb(253, 235, 247), rgb(248, 236, 244),  rgb(253, 249, 252));
+}
+
+@viewport{
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
