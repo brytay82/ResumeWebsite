@@ -1,11 +1,12 @@
 body {
-    width:100vw;
-    height:100vh;
+    max-width: 100%;
+    max-height:100vh;
     margin: 0;
 }
 
 .content {
     min-height: 1490px;
+    max-width: 100%;
     margin: 0;
     }
 
@@ -25,7 +26,8 @@ p {
 }
 
 .contact-container {
-    height: 50px;
+    min-height: 50px;
+    max-width: 100%;
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
@@ -35,6 +37,7 @@ p {
 }
 
 .link-wrapper {
+    max-width: 100%;
     display: flex;
     text-align: center;
 }
@@ -55,7 +58,8 @@ p {
 
 .background {
     background-image: url(assets/BloodsLake.JPG);
-    height: 400px; 
+    min-height: 400px; 
+    max-width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 500px;
@@ -63,7 +67,7 @@ p {
 }
 
 .hello {
-    padding-right:225px;
+    padding-right: 20%;
     float: right;
 }
 
@@ -98,6 +102,7 @@ p {
 }
 
 .name-container {
+    max-width: 100%;
     padding: 6px 0 6px 0;
     display: flex;
     justify-content: center; 
@@ -116,14 +121,17 @@ p {
 }
 
 .background-planks {
+    max-width: 100%;
     background: url(assets/woodplanks2.jpg);
 }
 
 .mid-block {
-    height: 400px;
+    min-height: 400px;
+    max-width: 100%;
 }
 
 .image-block {
+    max-width: 100%;
     float: left; 
     margin-left: 20%;
     justify-content: center;
@@ -138,11 +146,13 @@ p {
 }
 
 .about-me-container {
+    max-width: 100%;
     display: flex;
 }
 
 .paper {
     background-image: url(assets/tornpaper2.png);
+    max-width: 100%;
     background-size: cover;
     padding: 5% 5% 3% 5%;
     background-repeat: no-repeat;
@@ -154,6 +164,7 @@ p {
 }
 
 .about-me-grid-container {
+max-width: 100%;
 display: grid;
 grid-template-columns: 10% 1%;
 grid-column-gap: 1%;
@@ -188,6 +199,7 @@ align-content: center;
 
 
 .description {
+    max-width: 100%;
     padding-left: 1%; 
     font-family: 'Indie Flower', cursive;
     
@@ -210,6 +222,7 @@ align-content: center;
 
 .skills-box {
     height: 250px;
+    max-width: 100%;
    
   
    
@@ -235,16 +248,17 @@ align-content: center;
 
 
 .flex-container {
+    max-width: 100%;
 display: flex;
 align-content: center;
 justify-content: center;
-height: 600px; 
+min-height: 600px; 
 padding-bottom: 2%; 
 
 }
 
 .resume {
-    height: 590px;
+    min-height: 590px;
    padding: 0 0 5px 0;
     object-fit: fill;
     text-decoration: none; 
@@ -291,7 +305,8 @@ padding-bottom: 2%;
 
 .footer {
     align-self: flex-end;
-    height: 30px;
+    min-height: 30px;
+    max-width: 100%;
     font-size: 14px;
     font-weight: 500;
     padding-top: 1%;
