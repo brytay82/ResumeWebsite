@@ -1,13 +1,16 @@
+
+
 body {
     max-width: 100%;
     max-height:100vh;
-    margin: 0;
+    margin-inline: auto;
+
 }
 
 .content {
     min-height: 1490px;
     max-width: 100%;
-    margin: 0;
+    margin-inline: auto;
     }
 
 
@@ -26,8 +29,9 @@ p {
 }
 
 .contact-container {
+    margin-inline: auto;
     min-height: 50px;
-    max-width: 100%;
+    min-width: 100%;
     display: flex;
     align-items: center; 
     justify-content: space-evenly;
@@ -37,9 +41,10 @@ p {
 }
 
 .link-wrapper {
-    max-width: 100%;
+    margin-inline: auto;
+    min-width: 100%;
     display: flex;
-    text-align: center;
+    justify-content: space-evenly;
 }
 
 .contact-link a i {
@@ -57,13 +62,13 @@ p {
 }
 
 .background {
+    margin-inline: auto;
     background-image: url(assets/BloodsLake.JPG);
-    min-height: 400px; 
+    height: 40rem;
     max-width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 500px;
-    padding: 0 0 15px 0;
+    background-size: 100% 100%;
 }
 
 .hello {
@@ -72,7 +77,7 @@ p {
 }
 
 .hello h1{
-    font-size: 56px; 
+    font-size: 3rem; 
     font-weight: 900;
     font-family: 'Merienda', italic, serif;
     color: rgb(158, 97, 182);
@@ -102,8 +107,9 @@ p {
 }
 
 .name-container {
+    margin-inline: auto;
     max-width: 100%;
-    padding: 6px 0 6px 0;
+    padding: 1rem;
     display: flex;
     justify-content: center; 
     text-align: center;
@@ -121,128 +127,132 @@ p {
 }
 
 .background-planks {
-    max-width: 100%;
+    margin-inline: auto;
     background: url(assets/woodplanks2.jpg);
 }
 
 .mid-block {
-    min-height: 400px;
-    max-width: 100%;
+    min-height: 250px;
+    margin-inline: auto;
+    width: min(100%, 100rem);
 }
 
 .image-block {
-    max-width: 100%;
-    float: left; 
-    margin-left: 20%;
+    float: left;
+    margin-inline: auto;
     justify-content: center;
     align-content: center;
     padding-top: 2%; 
+    padding-right: 2%;
 }
 
 .image {
+    
     height: 225px; 
     border-radius: 20%;   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .about-me-container {
-    max-width: 100%;
+    margin-inline: auto;
+    
     display: flex;
 }
 
-.paper {
-    background-image: url(assets/tornpaper2.png);
-    max-width: 100%;
-    background-size: cover;
-    padding: 5% 5% 3% 5%;
-    background-repeat: no-repeat;
-}
-
-.about-me-block {
-    float: center;
-    width: 75%; 
-}
 
 .about-me-grid-container {
-max-width: 100%;
+margin-inline: auto;
 display: grid;
-grid-template-columns: 10% 1%;
-grid-column-gap: 1%;
 display: flex; 
-align-content: center;
 }
 
 .grid-item1 {
+    margin-inline: auto;
     grid-column-start: 1;
     grid-column-end: 2;
-    margin-left: 10%; 
+    width: min(70%, 70rem);
+    
+    
 }
 
 .grid-item2 {
-    grid-column-start: 1;
+    margin-inline: auto;
+    grid-column-start: 2;
     grid-column-end: 3;
-    margin-left: 0;
-    align-content: center; 
-    justify-content: center; 
-    margin-top: 2%;
-    width: 30%;
-    margin-right: 20%;
+    /*align-content: center;*/ 
+    /*justify-content: center;*/ 
+    padding-top: 1%;
+    width: min(20%, 20rem);
+   
+   
 }
 
 .background-headings {
+    line-height: 2;
     font-family: 'Merienda', italic, serif;
-    padding-top: 1%;  
+    font-size: 1.5rem;
     font-weight: 900;
     color:  rgb(94, 6, 94); 
     text-shadow: 1px 1px 1px black;
 }
 
 
-.description {
-    max-width: 100%;
-    padding-left: 1%; 
-    font-family: 'Indie Flower', cursive;
+/*
+.paper {
+    background-image: url(assets/tornpaper2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: min(100%, 100rem);
+}
+*/
+
+.description{
     
+    margin-inline: auto;
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.987rem;
     font-weight: 900;
     color:  rgb(94, 6, 94); 
+    /*padding: 5%;*/
+    width: min(90%, 90rem);
+    text-shadow: 1px 1px 0 black;
 }
 
 .first-paragraph {
-    padding-right: 2%;
+    padding-right: 1%;
+   
 }
 
 .second-paragraph {
     padding-left: 4%; 
-    padding-right: 2%;
+    padding-right: 1%;
 }
 
 .third-paragraph {
-    padding-left: 6%; 
+    padding-left: 9%; 
 }
 
 .skills-box {
-    height: 250px;
+    float: right;
+    height: 200px;
     max-width: 100%;
-   
-  
-   
     background-color:  rgb(243, 242, 242);
-     
-      
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .skills-box p{
     padding-top: 2%;
-    padding-left: 1%;
+    padding-left: 15%;
+    width: min(90%, 70.5rem);
 }
 
 .bullet-points {
     padding-top: 2%;
-
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
     font-family: 'Georgia', serif, sans-serif;
     font-weight: 900;
-    font-size: 80%;
+    font-size: 70%;
     color:  rgb(94, 6, 94); 
 }
 
@@ -304,6 +314,7 @@ padding-bottom: 2%;
  
 
 .footer {
+    margin-inline: auto;
     align-self: flex-end;
     min-height: 30px;
     max-width: 100%;
