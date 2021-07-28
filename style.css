@@ -77,7 +77,7 @@ p {
 }
 
 .hello h1{
-    font-size: 3rem; 
+    font-size: 7rem; 
     font-weight: 900;
     font-family: 'Merienda', italic, serif;
     color: rgb(158, 97, 182);
@@ -132,10 +132,17 @@ p {
 }
 
 .mid-block {
-    min-height: 250px;
+    min-height: 350px;
     margin-inline: auto;
     width: min(100%, 100rem);
 }
+
+.about-me-grid-container {
+    margin-inline: auto;
+    display: grid;
+    display: flex; 
+    
+    }
 
 .image-block {
     float: left;
@@ -144,47 +151,41 @@ p {
     align-content: center;
     padding-top: 2%; 
     padding-right: 2%;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .image {
-    
-    height: 225px; 
+    height: 290px; 
     border-radius: 20%;   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .about-me-container {
-    margin-inline: auto;
-    
-    display: flex;
+   padding-top: 1%;
+   
 }
 
 
-.about-me-grid-container {
-margin-inline: auto;
-display: grid;
-display: flex; 
+
+.paper {
+    padding-top: 2%;
+    background-image: url(assets/tornpaper2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: min(71%, 71rem);
+    min-height: 400px;
 }
 
-.grid-item1 {
-    margin-inline: auto;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: min(70%, 70rem);
-    
-    
-}
+
 
 .grid-item2 {
     margin-inline: auto;
     grid-column-start: 2;
     grid-column-end: 3;
-    /*align-content: center;*/ 
-    /*justify-content: center;*/ 
-    padding-top: 1%;
-    width: min(20%, 20rem);
-   
-   
+    width: min(80%, 80rem); 
+    
 }
 
 .background-headings {
@@ -197,28 +198,18 @@ display: flex;
 }
 
 
-/*
-.paper {
-    background-image: url(assets/tornpaper2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: min(100%, 100rem);
-}
-*/
-
 .description{
     
-    margin-inline: auto;
     font-family: 'Indie Flower', cursive;
-    font-size: 0.987rem;
+    font-size: 1rem;
     font-weight: 900;
     color:  rgb(94, 6, 94); 
-    /*padding: 5%;*/
-    width: min(90%, 90rem);
-    text-shadow: 1px 1px 0 black;
+    width: min(80%, 90rem);
+  
 }
 
 .first-paragraph {
+
     padding-right: 1%;
    
 }
@@ -268,12 +259,12 @@ padding-bottom: 2%;
 }
 
 .resume {
-    min-height: 590px;
-   padding: 0 0 5px 0;
+    min-height: 600px;
+   padding: 0 0 0 0;
     object-fit: fill;
     text-decoration: none; 
     background-color:  rgb(243, 242, 242); 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
 
 .res-headers {
@@ -289,13 +280,20 @@ padding-bottom: 2%;
 
 .res-headers-box {
     background-color: rgb(233, 212, 245);
-    height: 25px; 
+    height: 30px; 
    }
+
+.res-style-skills {
+    font-family: 'Georgia', serif, sans-serif;
+    font-weight: 700;
+    font-size: 12px; 
+    padding-left: 5%; 
+}
 
 .res-style1 {
     font-family: 'Georgia', serif, sans-serif;
-    
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
     padding-left: 5%; 
 }
 
