@@ -156,7 +156,7 @@ p {
 }
 
 .image {
-    height: 290px; 
+    height: 295px; 
     border-radius: 20%;   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 1);
 }
@@ -174,8 +174,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    width: min(71%, 71rem);
-    min-height: 400px;
+    width: min(65%, 65rem);
+    min-height: 100%;
 }
 
 
@@ -200,16 +200,15 @@ p {
 
 .description{
     
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Sanskrit Text';
     font-size: 1rem;
     font-weight: 900;
     color:  rgb(94, 6, 94); 
-    width: min(80%, 90rem);
+    
   
 }
 
 .first-paragraph {
-
     padding-right: 1%;
    
 }
@@ -240,7 +239,7 @@ padding-bottom: 2%;
 
 .resume {
     min-height: 500px;
-   padding: 0 0 0 0;
+   padding: 0 0 1% 0;
     object-fit: fill;
     text-decoration: none; 
     background-color:  rgb(243, 242, 242); 
